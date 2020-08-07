@@ -1,0 +1,121 @@
+.Section {
+  padding-top: 40px;
+  padding-bottom: 170px;
+  position: relative;
+
+  .Row {
+    display: flex;
+    align-items: center;
+  }
+
+  .Overlay {
+    background-image: url(../../images/We-believe-BG.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .ContentContainer {
+    margin-left: 20px;
+  }
+
+  .Content {
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: rgba(61, 106, 241, 0.8);
+      font-size: 43px;
+      font-weight: 500;
+    }
+  }
+
+  .Steps {
+    margin-top: 50px;
+
+    > div {
+      margin-bottom: 20px;
+    }
+
+    svg {
+      max-width: 60px;
+      height: 50px;
+      margin-bottom: 20px;
+      path {
+        fill: #3d6af1 !important;
+      }
+    }
+  }
+
+  .Box {
+    border-radius: 15px 15px 15px 70px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+    padding: 18% 12% 18% 12%;
+    height: 100%;
+    background-color: #ffffff;
+
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      color: rgba(61, 106, 241, 0.8);
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .Section {
+    .ContentContainer {
+      margin-left: 0;
+      text-align: center;
+    }
+
+    a {
+      margin: 0 auto;
+    }
+
+    .TextCol {
+      max-width: 80%;
+    }
+
+    .ListCol {
+      max-width: 80%;
+    }
+
+    .Row {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Section {
+    .ListCol,
+    .TextCol {
+      max-width: 95%;
+    }
+
+    .Content {
+      h3 {
+        font-size: 18px;
+      }
+    }
+
+    .Image {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}

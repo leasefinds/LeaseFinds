@@ -1,0 +1,107 @@
+.Section {
+  background-color: transparent;
+  background-image: linear-gradient(130deg, #24113f 0%, #3d6af1 89%);
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  .Image {
+    border-radius: 300px 100px 100px 100px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
+    position: relative;
+    bottom: -100px;
+  }
+
+  .Overlay {
+    background-image: url(../../images/BG-HomePage-High.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .Shape {
+    transform: rotate(180deg);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    bottom: -1px;
+
+    svg {
+      width: calc(260% + 1.3px);
+      height: 120px;
+      transform: translateX(-50%) rotateY(180deg);
+      position: relative;
+      left: 50%;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .Row {
+    display: flex;
+    align-items: center;
+  }
+
+  .Content {
+    color: #ffffff;
+    margin-right: 30px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 43px;
+    }
+
+    p {
+      font-weight: 200;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Section {
+    padding-top: 80px !important;
+    padding-bottom: 30px !important;
+
+    a {
+      margin: 0 auto;
+    }
+
+    .Image {
+      bottom: 0;
+    }
+
+    .Content {
+      text-align: center;
+      margin-right: 0;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .ImageCol {
+      margin-top: 80px;
+    }
+  }
+}

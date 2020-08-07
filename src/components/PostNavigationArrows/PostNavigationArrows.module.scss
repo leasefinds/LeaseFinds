@@ -1,0 +1,43 @@
+.Navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  font-size: 20px;
+  margin-left: 0 !important;
+
+  .Right {
+    margin-left: 20px;
+  }
+  .Left {
+    margin-right: 20px;
+  }
+
+  a {
+    transition: 0.3s;
+    font-weight: 600;
+    text-decoration: none;
+
+    svg {
+      max-width: 6px;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Navigation {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+
+    .Right {
+      margin-left: 10px;
+    }
+    .Left {
+      margin-right: 10px;
+    }
+  }
+}

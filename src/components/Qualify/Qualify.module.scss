@@ -1,0 +1,127 @@
+.Section {
+  padding-top: 0;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  background-color: transparent;
+  background-image: linear-gradient(130deg, #24113f 0%, #3d6af1 89%);
+
+  .Row {
+    display: flex;
+    align-items: center;
+  }
+
+  .Image {
+    border-radius: 300px 100px 100px 100px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.12);
+    max-width: 538px;
+    margin-left: auto;
+    margin-top: -38px;
+  }
+
+  .Overlay {
+    background-image: url(../../images/CTA-Shapes.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .Shape {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+
+    svg {
+      width: calc(230% + 1.3px);
+      height: 100px;
+      transform: translateX(-50%) rotateY(180deg);
+      display: block;
+      position: relative;
+      left: 50%;
+
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  .Content {
+    margin-top: 50px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 60px;
+      color: #ffffff;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 43px;
+      font-weight: 500;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .Section {
+    .Content {
+      margin-top: 90px;
+
+      h2 {
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Section {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    .Shape svg {
+      height: 60px;
+    }
+
+    a {
+      margin: 0 auto;
+    }
+
+    .Content {
+      margin-top: 95px;
+
+      h2 {
+        font-size: 28px !important;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .Image {
+      margin-top: 80px;
+      margin-right: 0;
+      margin-bottom: -30px;
+    }
+
+    .Overlay {
+      background-position: center left;
+    }
+  }
+}

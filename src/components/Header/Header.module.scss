@@ -1,0 +1,214 @@
+header {
+  background-color: transparent;
+  background-image: linear-gradient(130deg, #24113f 0%, #3d6af1 100%);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -1px;
+  z-index: 10;
+}
+
+.Logo {
+  max-width: 181px;
+  width: 100%;
+}
+
+.Phone {
+  border-left: solid 1px rgba(255, 255, 255, 0.7);
+  padding-left: 20px;
+  margin-left: 15px;
+  line-height: 1.3;
+
+  span {
+    color: #ffffff;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  svg {
+    width: 15px;
+    margin-bottom: 2px;
+  }
+}
+
+.Wrapper {
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.05);
+
+  .InnerWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-left: 30px;
+      margin-right: 15px;
+      margin-bottom: 0;
+
+      a {
+        color: #ffffff;
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+
+        &.ActiveMenuItem {
+          font-weight: 700;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .MenuWrapperMobile {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    background: #ffffff;
+    height: 100vh !important;
+    max-width: 100%;
+    width: 100vw;
+    text-align: left;
+    transform: translateX(-100vw) !important;
+    // padding: 2rem;
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    transition: transform 0.3s ease-in-out !important;
+    z-index: 10;
+
+    nav {
+      height: 100%;
+      display: block !important;
+    }
+
+    ul {
+      // padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      li {
+        padding-bottom: 30px;
+
+        a {
+          color: #24113f;
+          font-size: 24px;
+          line-height: 1;
+        }
+      }
+    }
+
+    &.Open {
+      transform: translateX(0) !important;
+    }
+  }
+
+  .NavbarToggler {
+    position: absolute;
+    right: 12px;
+    top: 35px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // width: 22px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 11;
+
+    &:focus {
+      outline: none;
+    }
+
+    div {
+      width: 22px;
+      height: 1.5px;
+      background: #ffffff;
+      border-radius: 50px;
+      transition: all 0.3s linear;
+      position: relative;
+      transform-origin: 1px;
+
+      &:first-child {
+        transform: rotate(0);
+      }
+
+      &:nth-child(2) {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(0);
+      }
+    }
+
+    &.Open {
+
+
+      div {
+        background: #000000;
+
+
+        &:first-child {
+          transform: rotate(41.8deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+          transform: translateX(10px);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-41.8deg);
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    .InnerWrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 18px;
+      padding-bottom: 23px;
+    }
+  }
+
+  .Logo {
+    // max-width: 120px;
+  }
+}

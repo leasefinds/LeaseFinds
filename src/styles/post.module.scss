@@ -1,0 +1,246 @@
+.Article {
+
+  .Container {
+    max-width: 750px !important;
+  }
+
+  .HeaderSection {
+    position: relative;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #24113f 0%, #3d6af1 89%);
+    padding-bottom: 120px;
+  }
+
+  .Overlay {
+    background-image: url(../images/Bg-About-New.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .Shape {
+    transform: rotate(180deg);
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    bottom: -1px;
+
+    svg {
+      width: calc(260% + 1.3px);
+      height: 120px;
+      transform: translateX(-50%) rotateY(180deg);
+      position: relative;
+      left: 50%;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .Image {
+    max-height: 400px;
+    margin-bottom: 25px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    margin-top: -120px;
+    margin-bottom: 50px;
+  }
+
+  .Title {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    text-align: center;
+  }
+
+  .EntryMeta {
+    margin-bottom: 40px;
+    display: flex;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+
+    .EntryMeta__Author {
+      padding-right: 20px;
+      border-right: solid #a7a7a7 1px;
+    }
+
+    .Date {
+      padding-left: 20px;
+    }
+  }
+
+  .ContentWrapper {
+    strong {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 35px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+
+      strong {
+        color: unset;
+        font-weight: bolder !important;
+      }
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    figure {
+      width: 100% !important;
+      height: auto;
+    }
+
+    p {
+      margin-bottom: 0.9rem !important;
+    }
+  }
+
+  .Content {
+    font-size: 16px;
+    line-height: 34px;
+    line-height: 1.7;
+
+    a {
+      color: #ffcc00 !important;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    ul {
+      list-style: unset;
+      padding-left: 40px;
+      margin-bottom: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    table {
+      width: 100%;
+      margin-bottom: 25px;
+
+      b {
+        font-weight: 700;
+      }
+    }
+
+    table td,
+    table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      font-size: 20px;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4caf50;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Article {
+    .Container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .HeaderSection {
+      padding-bottom: 70px !important;
+      padding-top: 70px !important;
+    }
+
+    .Image {
+      margin-top: -50px;
+    }
+
+    .Content {
+      font-size: 15px;
+      line-height: 1.7;
+
+      table td,
+      table th {
+        font-size: 14px;
+      }
+    }
+
+    .Title {
+      font-size: 26px !important;
+      margin-bottom: 15px !important;
+    }
+
+    .ContentWrapper {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 1rem !important;
+      }
+    }
+
+    .EntryMeta {
+      font-size: 12px;
+      // flex-direction: column;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+  }
+}
