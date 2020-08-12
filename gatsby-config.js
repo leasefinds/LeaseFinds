@@ -70,23 +70,21 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-wpgraphql-inline-images',
+      resolve: "gatsby-wpgraphql-inline-images",
       options: {
         wordPressUrl: `https://leasefinds2.wptestprev.icu/`,
         uploadsUrl: `https://leasefinds2.wptestprev.icu/uploads/`,
         processPostTypes: ["Post"],
-        graphqlTypeName: 'WPGraphQL',
+        graphqlTypeName: "WPGraphQL",
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //   options: {
-    //     custom: {
-    //       families: ["SFProDisplay"],
-    //       urls: ["/fonts/fonts.css"],
-    //     },
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-MDV7KNF",
+        includeInDevelopment: false,
+      },
+    },
     // `gatsby-plugin-preact`,
   ],
 }
