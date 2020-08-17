@@ -39,7 +39,7 @@ module.exports = {
       options: {
         typeName: "WPGraphQL",
         fieldName: "wpgraphql",
-        url: `https://leasefinds2.wptestprev.icu/graphql`,
+        url: `https://api.leasefinds.com/graphql`,
         refetchInterval: 30,
       },
     },
@@ -72,8 +72,8 @@ module.exports = {
     {
       resolve: "gatsby-wpgraphql-inline-images",
       options: {
-        wordPressUrl: `https://leasefinds2.wptestprev.icu/`,
-        uploadsUrl: `https://leasefinds2.wptestprev.icu/uploads/`,
+        wordPressUrl: `https://api.leasefinds.com/`,
+        uploadsUrl: `https://api.leasefinds.com/uploads/`,
         processPostTypes: ["Post"],
         graphqlTypeName: "WPGraphQL",
       },

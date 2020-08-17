@@ -41,8 +41,8 @@ const Post = ({ pageContext }) => {
   }
 
   const pluginOptions = {
-    wordPressUrl: `https://leasefinds2.wptestprev.icu/`,
-    uploadsUrl: `https://leasefinds2.wptestprev.icu/uploads/`,
+    wordPressUrl: `https://api.leasefinds.com/`,
+    uploadsUrl: `https://api.leasefinds.com/uploads/`,
   }
 
   return (
