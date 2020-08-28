@@ -71,7 +71,7 @@ module.exports.createPages = async ({ graphql, actions, reporter }) => {
   // pages
   query.data.wpgraphql.pages.edges.forEach(edge => {
     if (
-      edge.node.uri === "global-information/" ||
+      edge.node.uri === "/global-information/" ||
       edge.node.uri === "/" ||
       edge.node.uri === "/blog/"
     ) {

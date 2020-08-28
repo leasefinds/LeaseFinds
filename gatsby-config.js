@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://leasefindswebsite.netlify.app`,
+    siteUrl: `https://leasefinds.com`,
     title: `LeaseFinds`,
     description: ``,
     image: `/icons/icon.png`,
