@@ -64,13 +64,15 @@ const Header = ({ location }) => {
           <div className={styles.InnerWrapper}>
             <div className={styles.Logo}>
               <Link aria-label="Header logo" to="/">
-                <Img
-                  className={styles.Logo}
-                  fluid={logo.imageFile.childImageSharp.fluid}
-                  alt={logo.altText}
-                  loading="eager"
-                  imgStyle={{ objectFit: "contain" }}
-                />
+                {logo ? (
+                  <Img
+                    className={styles.Logo}
+                    fluid={logo.imageFile.childImageSharp.fluid}
+                    alt={logo.altText}
+                    loading="eager"
+                    imgStyle={{ objectFit: "contain" }}
+                  />
+                ) : null}
               </Link>
             </div>
             <div>

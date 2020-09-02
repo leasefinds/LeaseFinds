@@ -33,15 +33,16 @@ const TextImageLeft = ({ content, image, button }) => {
     <section className={styles.Section}>
       <div className={styles.Overlay}></div>
 
-
       <Container>
         <Row className={styles.Row}>
           <Col md={6}>
-            <Img
-              className={styles.Image}
-              fluid={img.imageFile.childImageSharp.fluid}
-              alt={img.altText}
-            />
+            {img ? (
+              <Img
+                className={styles.Image}
+                fluid={img.imageFile.childImageSharp.fluid}
+                alt={img.altText}
+              />
+            ) : null}
           </Col>
 
           <Col md={6}>

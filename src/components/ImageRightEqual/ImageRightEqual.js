@@ -59,11 +59,13 @@ const ImageRightEqual = ({ location, content, image, button }) => {
           </Col>
 
           <Col md={6}>
-            <Img
-              className={styles.Image}
-              fluid={img.imageFile.childImageSharp.fluid}
-              alt={img.altText}
-            />
+            {img ? (
+              <Img
+                className={styles.Image}
+                fluid={img.imageFile.childImageSharp.fluid}
+                alt={img.altText}
+              />
+            ) : null}
           </Col>
         </Row>
       </Container>

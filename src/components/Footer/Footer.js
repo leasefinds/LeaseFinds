@@ -47,7 +47,6 @@ const Footer = () => {
   const logo = data.wpgraphql.page.globalFields.logoBlack
   const menu = data.wpgraphql.menu.menuItems.edges
   const phone = data.wpgraphql.page.globalFields.phoneNumber
-  
 
   return (
     <>
@@ -55,14 +54,14 @@ const Footer = () => {
         <Container>
           <Row className={styles.Row}>
             <Col md={3}>
-              {
+              {logo ? (
                 <Img
                   className={styles.Logo}
                   fluid={logo.imageFile.childImageSharp.fluid}
                   alt={logo.altText}
                   loading="eager"
                 />
-              }
+              ) : null}
             </Col>
 
             <Col md={9}>

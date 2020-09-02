@@ -70,11 +70,13 @@ const HeroMain = ({ content, image, button }) => {
           </Col>
 
           <Col className={styles.ImageCol} md={6}>
-            <Img
-              className={styles.Image}
-              fluid={imageRight.imageFile.childImageSharp.fluid}
-              alt={imageRight.altText}
-            />
+            {imageRight ? (
+              <Img
+                className={styles.Image}
+                fluid={imageRight.imageFile.childImageSharp.fluid}
+                alt={imageRight.altText}
+              />
+            ) : null}
           </Col>
         </Row>
       </Container>
