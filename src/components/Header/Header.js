@@ -75,7 +75,7 @@ const Header = ({ location }) => {
                 ) : null}
               </Link>
             </div>
-            <div>
+            <div className="mobile">
               {isMobile ? (
                 <div>
                   <button
@@ -129,7 +129,7 @@ const Header = ({ location }) => {
               ) : null}
             </div>
 
-            <div>
+            <div className="desktop">
               {!isMobile ? (
                 <nav>
                   <ul>
