@@ -11,6 +11,7 @@
     white-space: nowrap;
     flex-wrap: nowrap;
     flex-direction: row;
+    align-items: center;
   
     span a {
       color: #24113f;
@@ -21,6 +22,7 @@
   
     svg {
       width: 15px;
+      height: 15px;
       margin-bottom: 2px;
       path {
         fill: #24113f;
